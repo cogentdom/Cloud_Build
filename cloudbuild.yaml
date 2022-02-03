@@ -8,5 +8,5 @@ steps:
   args: ['build', '-t', 'gcr.io/neon-pad-338114/cloud-spanner-build', '--build-arg=JAR_FILE=target/build-artifact', '.']
 images: ['gcr.io/neon-pad-338114/cloud-spanner-build']
 
-  options:
-  logging: CLOUD_LOGGING_ONLY
+options:
+logging: CLOUD_LOGGING_ONLY
