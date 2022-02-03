@@ -12,3 +12,6 @@ steps:
  - name: gcr.io/cloud-builders/docker
    args: ['build', '-t', 'gcr.io/neon-pad-338114/cloud-spanner-build', '--build-arg=JAR_FILE=target/build-artifact', '.']
 images: ['gcr.io/neon-pad-338114/cloud-spanner-build']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/neon-pad-338114/cloud-spanner-build']
